@@ -1,4 +1,4 @@
- var tasks = {};
+var tasks = {};
 
 var createTask = function(taskText, taskDate, taskList) {
   // create elements that make up a task item
@@ -89,10 +89,6 @@ $("#remove-tasks").on("click", function() {
     $("#list-" + key).empty();
   }
   saveTasks();
-  //this is an onclick for this in jquery 
-  $(".list-group").on("click", "p", function() {
-    console.log("<p> was clicked");
-  });
 });
 
 // load tasks for the first time
